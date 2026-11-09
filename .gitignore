@@ -1,0 +1,19 @@
+# Dependencies and generated output
+node_modules/
+coverage/
+dist/
+*.log
+# Local application data and temporary files
+data/
+*.tmp
+*.db
+*.sqlite*
+# Secrets and personal IDE settings
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,10 @@
+{
+  "name": "student-task-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Локальна система обліку навчальних завдань студента",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node src/server.js", "test": "node --test" },
+  "dependencies": {}
+}
