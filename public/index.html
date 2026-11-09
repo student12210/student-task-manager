@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="uk">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Мій навчальний план</title><link rel="stylesheet" href="/styles.css"><script src="/app.js" defer></script></head>
+<body>
+<main>
+  <header><div><p class="eyebrow">ПЛАНУЙ • НАВЧАЙСЯ • ВСТИГАЙ</p><h1>Мій навчальний план</h1><p class="subtitle">Усі завдання, дедлайни та результати в одному місці.</p></div><span class="badge">Студентський простір</span></header>
+  <section class="stats" aria-label="Статистика"><div><span id="total">0</span>Усього завдань</div><div><span id="active">0</span>У роботі</div><div><span id="completed">0</span>Виконано</div><div><span id="overdue">0</span>Прострочено</div></section>
+  <div class="layout">
+    <section class="panel editor"><h2 id="form-title">Нове завдання</h2><p class="hint">Почни з одного невеликого кроку.</p>
+      <form id="task-form">
+        <label>Назва завдання <span aria-hidden="true">*</span><input id="title" name="title" required maxlength="160" placeholder="Наприклад, виконати практичну № 4"></label>
+        <label>Предмет<input id="subject" name="subject" maxlength="80" placeholder="Інформатика"></label>
+        <div class="fields"><label>Термін виконання<input id="due" name="due" type="date"></label><label>Пріоритет<select id="priority" name="priority"><option value="normal">Звичайний</option><option value="high">Високий</option><option value="low">Низький</option></select></label></div>
+        <label>Опис<textarea id="notes" name="notes" rows="3" maxlength="2000" placeholder="Що потрібно зробити?"></textarea></label>
+        <button class="primary" type="submit" id="save">Додати завдання</button><button class="secondary" id="cancel" type="button" hidden>Скасувати редагування</button>
+      </form>
+    </section>
+    <section class="panel list-panel"><div class="section-top"><h2>Мої завдання</h2><span id="count" class="hint"></span></div>
+      <div class="filters"><label class="search">Пошук<input id="search" type="search" placeholder="Назва, предмет або опис"></label><label>Статус<select id="filter"><option value="all">Усі завдання</option><option value="active">У роботі</option><option value="done">Виконані</option><option value="overdue">Прострочені</option></select></label></div>
+      <p id="message" role="status" aria-live="polite"></p><div id="tasks"></div>
+    </section>
+  </div>
+  <footer>Дані зберігаються локально на цьому комп’ютері. Щоб зберегти резервну копію, скопіюй папку data після зупинки програми.</footer>
+</main>
+</body></html>
