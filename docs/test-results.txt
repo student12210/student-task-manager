@@ -1,0 +1,19 @@
+тЦ╢ In-process request handler, persistence, validation and static routes
+  тЬФ initial empty list (4.2089ms)
+  тЬФ create Ukrainian task (8.958ms)
+  тЬФ update and complete (4.3353ms)
+  тЬФ survives app recreation (2.3829ms)
+  тЬФ rejects empty titles, impossible dates and invalid values (4.2573ms)
+  тЬФ rejects malformed JSON (0.8217ms)
+  тЬФ rejects foreign origins (0.3725ms)
+  тЬФ serves UI and rejects unknown paths (4.0569ms)
+  тЬФ delete (2.5533ms)
+тЬФ In-process request handler, persistence, validation and static routes (41.9649ms)
+тД╣ tests 10
+тД╣ suites 0
+тД╣ pass 10
+тД╣ fail 0
+тД╣ cancelled 0
+тД╣ skipped 0
+тД╣ todo 0
+тД╣ duration_ms 155.8806
